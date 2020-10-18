@@ -1,0 +1,9 @@
+/snap/clion/129/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/haotian/CSC417/CSC417-a2-mass-spring-3d
+-- Creating target: igl::core (igl)
+-- Creating target: igl::opengl (igl_opengl)
+-- Creating target: igl::opengl_glfw (igl_opengl_glfw)
+-- Using X11 for window creation
+-- Creating target: igl::opengl_glfw_imgui (igl_opengl_glfw_imgui)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/haotian/CSC417/CSC417-a2-mass-spring-3d/cmake-build-debug

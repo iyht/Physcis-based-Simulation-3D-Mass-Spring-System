@@ -33,6 +33,7 @@ Eigen::VectorXd x0; //fixed point constraints
 double t = 0; //simulation time 
 double dt = 0.005; //time step
 double k  = 1e5;
+//double k  = 2000;
 double k_selected = 1e5; //stiff spring for pulling on object
 double m = 1.;
 
@@ -98,6 +99,7 @@ bool draw(igl::opengl::glfw::Viewer & viewer) {
 
             PE += V_spring;
         }
+        std::cout << "PE:" << PE << std::endl;
         
         Visualize::add_energy(t, KE, PE);
 
