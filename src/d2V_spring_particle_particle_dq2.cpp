@@ -129,4 +129,9 @@ void d2V_spring_particle_particle_dq2(Eigen::Ref<Eigen::Matrix66d> H, Eigen::Ref
     H(5,5) = -stiffness*(-pow(q(0)*q(3)*-2.0-q(1)*q(4)*2.0-q(2)*q(5)*2.0+q(0)*q(0)+q(1)*q(1)+q(2)*q(2)+q(3)*q(3)+q(4)*q(4)+q(5)*q(5),3.0/2.0)+l0*(q(0)*q(0))+l0*(q(1)*q(1))+l0*(q(3)*q(3))+l0*(q(4)*q(4))-l0*q(0)*q(3)*2.0-l0*q(1)*q(4)*2.0)*1.0/pow(q(0)*q(3)*-2.0-q(1)*q(4)*2.0-q(2)*q(5)*2.0+q(0)*q(0)+q(1)*q(1)+q(2)*q(2)+q(3)*q(3)+q(4)*q(4)+q(5)*q(5),3.0/2.0);
 
     H = -H;
+
+    //Vector3d p1 = u.segment<3>(3*this->springs[i].first);
+    //Vector3d p2 = u.segment<3>(3*this->springs[i].second);
+  //grad of gravity is 0
+
 }
