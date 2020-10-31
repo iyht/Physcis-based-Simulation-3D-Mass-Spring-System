@@ -27,13 +27,13 @@ void assemble_forces(Eigen::VectorXd &f, Eigen::Ref<const Eigen::VectorXd> q, Ei
         dV_spring_particle_particle_dq(f_01, q0, q1, l0(i), k);
 
         //std::cout << "f_01" << f_01 << std::endl;
-        f(index_q0(0)) = f(index_q0(0)) - f_01(0);
-        f(index_q0(1)) = f(index_q0(1)) - f_01(1);
-        f(index_q0(2)) = f(index_q0(2)) - f_01(2);
-                        
-        f(index_q1(0)) = f(index_q1(0)) - f_01(3);
-        f(index_q1(1)) = f(index_q1(1)) - f_01(4);
-        f(index_q1(2)) = f(index_q1(2)) - f_01(5);
+        f(index_q0(0)) -= f_01(0);
+        f(index_q0(1)) -= f_01(1);
+        f(index_q0(2)) -= f_01(2);
+
+        f(index_q1(0)) -= f_01(3);
+        f(index_q1(1)) -= f_01(4);
+        f(index_q1(2)) -= f_01(5);
     }
         
 }
